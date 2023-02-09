@@ -15,27 +15,31 @@
   </style>
 </head>
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
+  <main>
+    <form action="submit">
+      <h3>
+        <label for="bill">Bill</label> <br> 
+        <input id="bill" type="number">
+      </h3>
+      <h3><label>Select Tip %</label></h3>
+      <button>5%</button>
+      <button>10%</button>
+      <button>15%</button>
+      <button>25%</button>
+      <button>50%</button>
+      <h3>
+        <label for="no-of-people">Number of people</label> <br>
+        <input id="no-of-people" type="text" placeholder="Custom">
+      </h3>
+    </form>
+    <div class="display-costs">
+      <h3>Tip Amount<span>/ person</span></h3>
+      <h2 class="value">$4.27</h2>
+      <h3>Total<span>/ person</span></h3>
+      <h2 class="value">$32.79</h2>
+      <button>reset</button>
+    </div>
+  </main>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
