@@ -37,6 +37,12 @@ h3 {
 }
 
 /* Percentage buttons */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .btn {
     background-color: hsl(183, 100%, 15%);
     border: 0;
@@ -61,7 +67,23 @@ h3 {
     background-color: hsl(172, 67%, 45%);
 }
 
+/* Inputs */
+input {
+    width: 100%;
+    padding: .5em 1em;
+    text-align: right;
+}
 
+/* TO remove the up down arrow keys from the number input buttons */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
 
 .icon {
     position: absolute;
