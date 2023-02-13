@@ -36,11 +36,32 @@ h3 {
     border-radius: 25px;
 }
 
+/* Percentage buttons */
+.btn {
+    background-color: hsl(183, 100%, 15%);
+    border: 0;
+    padding: 1em 0;
+    width: 45%;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
 .display-costs {
     background-color: hsl(183, 100%, 15%);
     padding: 1.5em 1em;
     border-radius: 10px;
 }
+
+/* Reset button */
+.reset-btn {
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 1em;
+    background-color: hsl(172, 67%, 45%);
+}
+
+
 
 .icon {
     position: absolute;

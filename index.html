@@ -32,11 +32,15 @@
         <input id="bill" type="number">
       </h3>
       <h3><label>Select Tip %</label></h3>
-      <button>5%</button>
-      <button>10%</button>
-      <button>15%</button>
-      <button>25%</button>
-      <button>50%</button>
+      <div class="buttons">
+        <button class="btn">05%</button>
+        <button class="btn">10%</button>
+        <button class="btn">15%</button>
+        <button class="btn">25%</button>
+        <button class="btn">50%</button>
+        <input aria-label="Enter your custom tip percentage" class="btn" type="number" placeholder="Custom">
+        <!-- <button class="btn custom-btn">Custom</button> -->
+      </div>
       <h3>
         <label for="no-of-people">Number of people</label> <br>
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="13" height="16">
@@ -50,7 +54,7 @@
       <h2 class="value">$4.27</h2>
       <h3>Total<span>/ person</span></h3>
       <h2 class="value">$32.79</h2>
-      <button>reset</button>
+      <button class="btn reset-btn">reset</button>
     </div>
   </main>
   <footer class="footer container">
