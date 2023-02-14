@@ -89,6 +89,7 @@ input {
     background-color: #fff;
     padding: 1em 2em;
     border-radius: 25px;
+    margin: 0 auto;
 }
 
 /* Percentage buttons */
@@ -184,4 +185,35 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
     -moz-appearance: textfield;
+}
+
+
+@media (min-width: 700px) {
+
+    .container,
+    .main {
+        max-width: 800px;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+
+    .form,
+    .display-costs {
+        width: 45%;
+    }
+
+    .display-costs {
+        margin: 0;
+        padding: 3em;
+    }
+
+
+    .btn {
+        max-width: 100px;
+    }
 }
