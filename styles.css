@@ -120,22 +120,20 @@ input {
     border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, auto);
     align-items: start;
 }
 
-.display-costs span {
-    grid-column: 1 / span 1;
-    grid-row: span 1;
+.display-costs h3 {
+    margin-bottom: 1em;
 }
 
 .value {
     grid-column: 2 / span 1;
-    grid-row: 1 / span 2;
+    grid-row: 1 / span 1;
 }
 
 .value-two {
-    grid-row: 3 / span 2;
+    grid-row: 2 / span 1;
 }
 
 .reset-btn {
@@ -200,6 +198,16 @@ input[type=number] {
         margin: 0;
         padding: 3em;
         padding-bottom: 2em;
+        grid-template-rows: 80px 80px auto;
+    }
+
+    .value {
+        min-height: 65px;
+    }
+
+    .display-costs h3,
+    .display-costs h3>span {
+        margin-bottom: 0;
     }
 
     .btn {
@@ -211,5 +219,4 @@ input[type=number] {
         padding: 1em;
         margin-top: auto;
     }
-
 }
